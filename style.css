@@ -30,6 +30,13 @@
 .add-pokemon:hover {
     box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2);
 }
+.button-add{
+    height: 100%;
+    align-items: center;
+}
+.column-pokemon{
+    margin: 30px 0px; 
+}
 .card-pokemon{
     width: 229px;
     height: 366px;
