@@ -11,13 +11,6 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script src="main.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Pokedex</title>
   </head>
@@ -26,9 +19,9 @@
       <div class="container pokedex">
         <div class="card card-pokedex">
           <div class="container">
-            <div class="row">
+            <div id="pokemonContainer" class="row">
               <div class="col-3 column-pokemon button-add">
-                <a href="#" class="add-pokemon">
+                <a id="btnAddPokemon" href="#" class="add-pokemon">
                   <svg
                     class="icon"
                     width="54"
@@ -46,26 +39,29 @@
                     />
                   </svg>
                 </a>
+                <button id="btnPrueba">
+                  holaprueba
+                </button>
               </div>
-              <div class="col-3  column-pokemon">
-                <div class="card-pokemon"></div>
-              </div>
-              <div class="col-3  column-pokemon">
-                <div class="card-pokemon"></div>
-              </div>
-              <div class="col-3  column-pokemon">
-                <div class="card-pokemon"></div>
-              </div>
-              <div class="col-3  column-pokemon">
-                <div class="card-pokemon"></div>
-              </div>
-              <div class="col-3  column-pokemon">
-                <div class="card-pokemon"></div>
+              <div class="col-3 pokemon">
+                <div class="card-pokemon">
+                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/25.png" alt="pokemon" class="card-img">
+                  <div class="card-name">Biddof</div>
+                  <div class="card-type">Fuego</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
   </body>
 </html>

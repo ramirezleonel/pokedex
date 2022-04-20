@@ -1,6 +1,6 @@
-.background-container{
+.background-container {
     display: flex;
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
     width: 100%;
     height: 100vh;
 }
@@ -30,17 +30,50 @@
 .add-pokemon:hover {
     box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2);
 }
-.button-add{
+.button-add {
     height: 100%;
     align-items: center;
 }
-.column-pokemon{
-    margin: 30px 0px; 
+.pokemon {
+    margin: 30px 0px;
 }
-.card-pokemon{
+.card-pokemon {
     width: 229px;
     height: 366px;
-    background: #635A53;
+    background: #635a53;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+.card-img {
+    position: relative;
+    width: 190px;
+    height: 181px;
+    left: 18px;
+    top: 18px;
+    background: url(""), #e5e5e5;
+    border-radius: 30px;
+}
+.card-name {
+    text-align: center;
+    position: relative;
+    height: 54px;
+    top: 25px;
+    font-family: "Reem Kufi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    color: #ffffff;
+}
+.card-type {
+    position: relative;
+    width: 118px;
+    height: 29px;
+    left: 50px;
+    top: 50px;
+    text-align: center;
+    background: #f2f2f2;
+    box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
 }
