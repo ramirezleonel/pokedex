@@ -32,9 +32,9 @@ const handledAddPokemon = () => {
     },
   }).then((result) => {
     if (result.isConfirmed) {
-      const { id, name, sprites, types} = result?.value;
+      const { id, name, sprites, types } = result?.value;
       console.log(types);
-      createPokemon(id, name, sprites?.back_default,);
+      createPokemon(id, name, sprites?.back_default,types[0].type.name);
     }
   });
 };
@@ -48,13 +48,22 @@ const createPokemon = (id = "", name = "", img = "", type = "") => {
   pokemon.innerHTML = ` <div class="card-pokemon" id=${id}>
   <img src=${img} alt="pokemon" class="card-img">
   <div class="card-name">${capitalizeFirstLetter(name)}</div>
-  <div class="card-type">${type}</div>
+  <div class="card-type">${translateNamePokemon(type)}</div>
   </div>`;
   pokemonContainer.appendChild(pokemon);
 };
 
 const capitalizeFirstLetter = (string) => {
   return string.charAt(0).toUpperCase() + string.slice(1);
-}
+};
 
-
+const translateNamePokemon = (pokemon) => {
+  switch (pokemon) {
+    case "electric":
+      return "Electrico";
+    case "poison":
+      return "Venenoso";
+    default:
+      return "Otro";
+  }
+};
