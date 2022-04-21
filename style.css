@@ -31,7 +31,10 @@
 }
 .add-pokemon:hover {
     box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2);
-    background-color: #093103;
+    background-color: #dad332;
+}
+.add-pokemon:hover .icon{
+    stroke : #3562AC
 }
 .icon {
     stroke : #6D6464
