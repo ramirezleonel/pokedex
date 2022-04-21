@@ -40,9 +40,11 @@
 .card-pokemon {
     width: 229px;
     height: 366px;
-    background: #635a53;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
     border-radius: 30px;
+}
+.card-pokemon:hover {
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 .card-img {
     position: relative;
@@ -76,4 +78,31 @@
     background: #f2f2f2;
     box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
+}
+.color-normal {
+    background: #635a53;
+}
+.color-electric {
+    background: #dad332;
+}
+.color-grass {
+    background: #539748;
+}
+.color-water {
+    background: #4381a4;
+}
+.color-fire {
+    background: #e4860c;
+}
+.color-poison {
+    background: #5f08eb;
+}
+.color.ground {
+    background: #093103;
+}
+.color-bug{
+    background: #382202;
+}
+.color-default {
+    background: #212121;
 }
