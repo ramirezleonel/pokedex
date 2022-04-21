@@ -1,14 +1,8 @@
-.html, body{
-    display: flex;
-    height: 100%;
-    width: 100%;
-}
-
 .background-container {
     background-color: #e5e5e5;
     width: 100%;
     height: 100%;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -17,7 +11,7 @@
     transition: 0.3s;
     width: 100%;
     justify-content: center;
-    margin: 100px 0px;
+    margin: 70px 0px;
     min-height: 500px;
     display: flex;
     flex-direction: column;
@@ -37,6 +31,10 @@
 }
 .add-pokemon:hover {
     box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2);
+    background-color: #093103;
+}
+.icon {
+    stroke : #6D6464
 }
 .button-add {
     height: 100%;
@@ -87,9 +85,9 @@
     box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
 }
-.title-img-pokemon{
-    width: 800px;
-    height: 300px;
+.title-img-pokemon {
+    width: 600px;
+    height: 250px;
 }
 .color-normal {
     background: #635a53;
@@ -112,7 +110,7 @@
 .color.ground {
     background: #093103;
 }
-.color-bug{
+.color-bug {
     background: #382202;
 }
 .color-default {
