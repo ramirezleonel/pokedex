@@ -1,7 +1,30 @@
+@keyframes fadeIn {
+    50% {
+        height: 250px;
+    }
+    100% {
+        height: 366px;
+    }
+}
+
+@keyframes fadeInImage {
+    0% {
+        visibility: hidden;
+        height: 60px;
+        width: 60px;
+        border-radius: 0px;
+    }
+    50% {
+        visibility: visible;
+        height: 60px;
+        width: 60px;
+        border-radius: 20px;
+    }
+}
 .background-container {
     background-color: #e5e5e5;
     width: 100%;
-    height: 100%;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +34,7 @@
     transition: 0.3s;
     width: 100%;
     justify-content: center;
-    margin: 70px 0px;
+    margin: 50px 0px;
     padding: 20px;
     min-height: 500px;
     display: flex;
@@ -33,13 +56,13 @@
 .add-pokemon:hover {
     box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2);
     background-color: #dad332;
-    border: 6px dashed #3562AC;
+    border: 6px dashed #3562ac;
 }
-.add-pokemon:hover .icon{
-    stroke : #3562AC
+.add-pokemon:hover .icon {
+    stroke: #3562ac;
 }
 .icon {
-    stroke : #6D6464
+    stroke: #6d6464;
 }
 .button-add {
     height: 100%;
@@ -49,6 +72,10 @@
     margin: 30px 0px;
 }
 .card-pokemon {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    animation: 0.6s fadeIn;
     width: 229px;
     height: 366px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
@@ -58,11 +85,11 @@
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 .card-img {
+    animation: 0.6s fadeInImage;
     position: relative;
     width: 190px;
     height: 181px;
-    left: 18px;
-    top: 18px;
+    margin-top: 15px;
     background: url(""), #e5e5e5;
     border-radius: 30px;
 }
@@ -91,8 +118,8 @@
     border-radius: 30px;
 }
 .title-img-pokemon {
-    width: 600px;
-    height: 250px;
+    width: 500px;
+    height: 180px;
 }
 .color-normal {
     background: #635a53;
