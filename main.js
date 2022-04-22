@@ -36,7 +36,6 @@ const handledAddPokemon = () => {
   }).then((result) => {
     if (result.isConfirmed) {
       const { id, name, sprites, types } = result?.value;
-      console.log(result?.value);
       createPokemon(id, name, sprites?.front_default, types[0]?.type.name);
     }
   });
